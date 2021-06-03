@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wave Cafe</title>
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
     <link rel="stylesheet" href="css/tooplate-wave-cafe.css">
     <link rel="stylesheet" href="css/searchBox.css">
 
@@ -17,10 +17,10 @@
         <div class="tm-left">
             <div class="tm-left-inner">
                 <div class="searchBox">
-                        <input class="searchInput" type="text" name="" placeholder="Search">
-                        <button class="searchButton" href="#">
-                            <i class="material-icons">Search</i>
-                        </button>
+                    <input class="searchInput" type="text" name="" placeholder="Search">
+                    <button class="searchButton" href="#">
+                        <i class="material-icons">Search</i>
+                    </button>
                 </div>
                 <div class="tm-site-header">
                     <i class="fas fa-coffee fa-3x tm-site-logo"></i>
@@ -76,11 +76,12 @@
 
                     <div id="cold" class="tm-tab-content">
                         <div class="tm-list">
-                            <div  th:each="coldCoffee: ${coldCoffees}" class="tm-list-item">
+                            <div th:each="coldCoffee: ${coldCoffees}" class="tm-list-item">
                                 <img th:src="${coldCoffee.imageURL}" alt="Image" class="tm-list-item-img">
                                 <div class="tm-black-bg tm-list-item-text">
                                     <h3 class="tm-list-item-name"><span th:text="${coldCoffee.name}"/>
-                                        <span class="tm-list-item-price">$<span th:text="${coldCoffee.price}"/></span></h3>
+                                        <span class="tm-list-item-price">$<span th:text="${coldCoffee.price}"/></span>
+                                    </h3>
                                     <p class="tm-list-item-description"><span th:text="${coldCoffee.description}"/></p>
                                 </div>
                             </div>
@@ -93,7 +94,8 @@
                                 <img th:src="${hotCoffee.imageURL}" alt="Image" class="tm-list-item-img">
                                 <div class="tm-black-bg tm-list-item-text">
                                     <h3 class="tm-list-item-name"><span th:text="${hotCoffee.name}"/>
-                                        <span class="tm-list-item-price">$<span th:text="${hotCoffee.price}"/></span></h3>
+                                        <span class="tm-list-item-price">$<span th:text="${hotCoffee.price}"/></span>
+                                    </h3>
                                     <p class="tm-list-item-description"><span th:text="${hotCoffee.description}"/></p>
                                 </div>
                             </div>
@@ -106,7 +108,8 @@
                                 <img th:src="${fruitJuice.imageURL}" alt="Image" class="tm-list-item-img">
                                 <div class="tm-black-bg tm-list-item-text">
                                     <h3 class="tm-list-item-name"><span th:text="${fruitJuice.name}"/>
-                                        <span class="tm-list-item-price">$<span th:text="${fruitJuice.price}"/></span></h3>
+                                        <span class="tm-list-item-price">$<span th:text="${fruitJuice.price}"/></span>
+                                    </h3>
                                     <p class="tm-list-item-description"><span th:text="${fruitJuice.description}"/></p>
                                 </div>
                             </div>
@@ -122,8 +125,26 @@
                         <div class="tm-list-item tm-list-item-2">
                             <img src="img/about-1.png" alt="Image" class="tm-list-item-img tm-list-item-img-big">
                             <div class="tm-list-item-text-2">
-                                <p>Wave Cafe is a one-page video background HTML CSS template from Tooplate. You can use this for your business websites.</p>
-                                <p>You can also use this for your client websites which you get paid for your website services. Please tell your friends about us.</p>
+                                <p>The History of The Story Cafe…
+
+                                    It’s all from a thought “There is a story in everything” by the owner. He loves
+                                    music, coffee, brunch, drinks, antiques, vintage records, cameras, phones and more.
+                                    So in 2018, he had an idea of combining all the elements into a restaurant. We
+                                    converted a 30 years old warehouse into a new concept restaurant. After two years
+                                    for all the design, inspections and constructions and finally The Story Cafe came to
+                                    life and soft opened in March 2020. Unfortunately, The Story Cafe was born during
+                                    right at the pandemic but we did not give up and started doing take outs and finally
+                                    The Story Cafe reopened for dine in on 1st of June.
+
+                                    We believe that nothing is useless, in fact almost everything in the restaurant has
+                                    it’s age and we bought them off from their previous owner in lower mainland and want
+                                    to give them a new life in our restaurant. When you walk into our restaurant, you
+                                    may think you are in different centuries that would remind you your old memories
+
+                                    At the same time, we are changing the history everyday and creating our own story.
+                                    We are inviting you to join and be a part of our story.</p>
+                                <p>You can also use this for your client websites which you get paid for your website
+                                    services. Please tell your friends about us.</p>
                             </div>
                         </div>
                     </div>
@@ -131,11 +152,21 @@
                         <div class="tm-list-item tm-list-item-2">
                             <div class="tm-list-item-text-2">
                                 <h2 class="tm-text-primary">How we began</h2>
-                                <p>If you wish to support us, please contact Tooplate. Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>
+                                <p>Due to the COVID-19, we are trying hard to get on different ordering platforms and so
+                                    far you can either place and order for pickup, or from our delivery partners
+                                    UberEats, SkipTheDishes and DoorDash to place an order and have them delivered to
+                                    you.</p>
                             </div>
-                            <img src="img/about-2.png" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">
+                            <img src="img/about-2.png" alt="Image"
+                                 class="tm-list-item-img tm-list-item-img-big tm-img-right">
                         </div>
-                        <p>Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+                        <p>The Story Cafe is not only a cafe. We have daily homemade pastries and desserts. Our daily
+                            brunch starts at 9am and till 3pm, lunch from 11am to 3pm, dinner 5pm – 10pm and we have
+                            happy hour during 3-5pm. We make our dishes with good quality food at a reasonable price.
+
+                            Every few days a week, we have live performance from 8pm to late, all the bands are local
+                            and covering different kinds of music on each day. You can enjoy our cocktails, local craft
+                            beer from the tap or wine when you enjoy the live music with us.</p>
                     </div>
                 </div>
                 <!-- end About Us Page -->
@@ -144,9 +175,10 @@
                 <div id="special" class="tm-page-content">
                     <div class="tm-special-items">
                         <div th:each="specialItem: ${specialItems}" class="tm-black-bg tm-special-item">
-                            <img  th:src="${specialItem.imageURL}"  alt="Image">
+                            <img th:src="${specialItem.imageURL}" alt="Image">
                             <div class="tm-special-item-description">
-                                <h2 class="tm-text-primary tm-special-item-title"><span th:text="${specialItem.name}"/></h2>
+                                <h2 class="tm-text-primary tm-special-item-title"><span th:text="${specialItem.name}"/>
+                                </h2>
                                 <p class="tm-special-item-text"><span th:text="${specialItem.description}"/></p>
                             </div>
                         </div>
@@ -158,18 +190,20 @@
                 <div id="contact" class="tm-page-content">
                     <div class="tm-black-bg tm-contact-text-container">
                         <h2 class="tm-text-primary">Contact Wave</h2>
-                        <p>Wave Cafe Template has a video background. You can use this layout for your websites. Please contact Tooplate's Facebook page. Tell your friends about our website.</p>
+                        <p>Contact us at --------------------</p>
                     </div>
                     <div class="tm-black-bg tm-contact-form-container tm-align-right">
                         <form action="" method="POST" id="contact-form">
                             <div class="tm-form-group">
-                                <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                                <input type="text" name="name" class="tm-form-control" placeholder="Name" required=""/>
                             </div>
                             <div class="tm-form-group">
-                                <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                                <input type="email" name="email" class="tm-form-control" placeholder="Email"
+                                       required=""/>
                             </div>
                             <div class="tm-form-group tm-mb-30">
-                                <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                                <textarea rows="6" name="message" class="tm-form-control" placeholder="Message"
+                                          required=""></textarea>
                             </div>
                             <div>
                                 <button type="submit" class="tm-btn-primary tm-align-right">
@@ -184,9 +218,9 @@
         </div>
     </div>
     <footer class="tm-site-footer">
-        <p class="tm-black-bg tm-footer-text">Copyright 2020 Wave Cafe
+        <p class="tm-black-bg tm-footer-text">Copyright 2021 :)
 
-            | Design: <a href="https://www.tooplate.com" class="tm-footer-link" rel="sponsored" target="_parent">Tooplate</a></p>
+            | Design: <a href="" class="tm-footer-link" rel="sponsored" target="_parent">Virendra Singh Rathore</a></p>
     </footer>
 </div>
 
@@ -226,11 +260,10 @@
     function initPage() {
         let pageId = location.hash;
 
-        if(pageId) {
+        if (pageId) {
             highlightMenu($(`.tm-page-link[href^="${pageId}"]`));
             showPage($(pageId));
-        }
-        else {
+        } else {
             pageId = $('.tm-page-link.active').attr('href');
             showPage($(pageId));
         }
@@ -246,15 +279,15 @@
         page.show();
     }
 
-    $(document).ready(function(){
+    $(document).ready(function () {
 
         /***************** Pages *****************/
 
         initPage();
 
-        $('.tm-page-link').click(function(event) {
+        $('.tm-page-link').click(function (event) {
 
-            if(window.innerWidth > 991) {
+            if (window.innerWidth > 991) {
                 event.preventDefault();
             }
 
@@ -279,7 +312,7 @@
 
         // Set video background size based on window size
         let timeout;
-        window.onresize = function(){
+        window.onresize = function () {
             clearTimeout(timeout);
             timeout = setTimeout(setVideoSize, 100);
         };
@@ -287,7 +320,7 @@
         // Play/Pause button for video background
         const btn = $("#tm-video-control-button");
 
-        btn.on("click", function(e) {
+        btn.on("click", function (e) {
             const video = document.getElementById("tm-video");
             $(this).removeClass();
 
