@@ -18,6 +18,7 @@ public class HomeController {
         model.addAttribute("coldCoffees", homeService.getColdCoffees());
         model.addAttribute("hotCoffees", homeService.getHotCoffees());
         model.addAttribute("fruitJuices", homeService.getFruitJuices());
+        model.addAttribute("specialItems", homeService.getSpecialItems());
         return "index";
     }
 

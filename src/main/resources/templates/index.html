@@ -144,7 +144,7 @@
                 <div id="special" class="tm-page-content">
                     <div class="tm-special-items">
                         <div th:each="specialItem: ${specialItems}" class="tm-black-bg tm-special-item">
-                            <img th:src="${specialItem.imageURL}" alt="Image">
+                            <img  th:src="${specialItem.imageURL}"  alt="Image">
                             <div class="tm-special-item-description">
                                 <h2 class="tm-text-primary tm-special-item-title"><span th:text="${specialItem.name}"/></h2>
                                 <p class="tm-special-item-text"><span th:text="${specialItem.description}"/></p>
